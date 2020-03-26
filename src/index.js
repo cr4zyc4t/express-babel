@@ -1,3 +1,6 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 import path from 'path';
 import http from 'http';
 import createError from 'http-errors';

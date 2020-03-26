@@ -8,13 +8,14 @@
     "serve": "npm run build && cross-env NODE_ENV=production node dist/index"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7",
     "cookie-parser": "~1.4.4",
+    "core-js": "^3.6.4",
     "cross-env": "^7.0.2",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "log4js": "^6.1.2"
+    "log4js": "^6.1.2",
+    "regenerator-runtime": "^0.13.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
