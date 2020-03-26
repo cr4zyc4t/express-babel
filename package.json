@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "build": "rimraf dist && babel src --copy-files --source-maps -d dist",
+    "serve": "npm run build && cross-env NODE_ENV=production node dist/index"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "cookie-parser": "~1.4.4",
     "cross-env": "^7.0.2",
     "ejs": "~2.6.1",
@@ -21,6 +24,7 @@
     "@cr4zyc4t/eslint-config-common": "^1.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2"
   }
 }
