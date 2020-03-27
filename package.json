@@ -1,7 +1,7 @@
 {
   "name": "express-babel",
   "version": "0.0.1",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "start": "nodemon",
     "build": "rimraf dist && babel src --copy-files --source-maps -d dist",
